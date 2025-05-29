@@ -1,0 +1,5 @@
+﻿  auth_server.cpp
+D:\ApplicationEncryption\DoAn\EAP-TLS-DEMO\auth_server.cpp(21,75): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  authenticator.cpp
+  Generating Code...
+  EAP-TLS-DEMO.vcxproj -> D:\ApplicationEncryption\DoAn\EAP-TLS-DEMO\x64\Debug\EAP-TLS-DEMO.exe
