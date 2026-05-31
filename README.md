@@ -19,6 +19,16 @@ Giao thức **EAP-TLS** (được định nghĩa trong RFC 5216) là tiêu chu�
 
 ---
 
+## 📚 Tài Liệu Lý Thuyết & Kỹ Thuật Chuyên Sâu
+
+Để hiểu rõ hơn về kiến thức lý thuyết mạng, toán học mật mã và kỹ thuật lập trình OpenSSL thực tế của dự án, bạn có thể đọc chuỗi tài liệu phân tích chuyên sâu tại thư mục `docs/`:
+
+1. **[Phần 1: Tổng quan Kiến trúc Mạng 802.1X và Giao thức EAP-TLS](file:///d:/EAP-TLS-DEMO/docs/1_tong_quan_mang_8021x.md)**: Phân tích sâu về mô hình 3 thành phần 802.1X, cơ chế đóng gói gói tin EAPOL và tiến trình bắt tay EAP-TLS (RFC 5216).
+2. **[Phần 2: Mật mã học, Chứng chỉ số X.509 và các Thuật toán](file:///d:/EAP-TLS-DEMO/docs/2_mat_ma_va_chung_chi.md)**: Phân tích cơ sở toán học thuật toán RSA, định dạng chứng chỉ X.509, cơ chế đệm an toàn tối ưu **RSA-OAEP** chống tấn công Bleichenbacher (Chosen-Ciphertext Attack), và hàm băm SHA-256.
+3. **[Phần 3: Lập trình OpenSSL EVP API và Thiết kế Máy trạng thái C++](file:///d:/EAP-TLS-DEMO/docs/3_ky_thuat_va_lap_trinh_openssl.md)**: Hướng dẫn kỹ thuật sử dụng thư viện OpenSSL 3.x EVP API để sinh khóa, ký cert, mã hóa/giải mã OAEP, thiết kế máy trạng thái các thực thể C++ và quản lý bộ nhớ an toàn.
+
+---
+
 ## Sơ Đồ Quy Trình Xác Thực (Mermaid Diagram)
 
 Quy trình trao đổi thông điệp EAP-TLS được mô phỏng chi tiết theo chuẩn 802.1X như sau:
@@ -112,18 +122,6 @@ Dự án đã tích hợp sẵn file `.sln` và `.vcxproj` cho Visual Studio:
 3. Chọn cấu hình `Debug` hoặc `Release` (x64).
 4. Nhấn **F5** hoặc nhấp **Start** để biên dịch và chạy.
 
-### 3. Hướng dẫn Biên dịch trên Linux (GCC / G++)
-Nếu muốn chạy dự án này trên môi trường Linux, bạn có thể dễ dàng biên dịch bằng lệnh `g++` trực tiếp:
-```bash
-# Cài đặt OpenSSL Development Package nếu chưa có
-sudo apt-get install libssl-dev
-
-# Biên dịch dự án
-g++ -std=c++17 main.cpp cert_utils.cpp peer.cpp authenticator.cpp auth_server.cpp -o eap_tls_demo -lssl -lcrypto
-
-# Chạy chương trình
-./eap_tls_demo
-```
 
 ---
 
@@ -207,8 +205,3 @@ g++ -std=c++17 main.cpp cert_utils.cpp peer.cpp authenticator.cpp auth_server.cp
 > - Các bản tin EAP giữa Authenticator và Authentication Server sẽ được định dạng theo chuẩn **RADIUS** (RFC 2865) hoặc **Diameter** đóng gói qua UDP/TCP.
 > - Quá trình sinh khóa phiên thực tế tuân theo cơ chế PRF (Pseudorandom Function) phức tạp hơn của chuẩn TLS (TLS 1.2 / TLS 1.3) thay vì chỉ sử dụng hàm SHA256 trực tiếp trên Pre-Master Secret.
 
----
-
-## Tác giả
-
-Dự án được xây dựng và phát triển nhằm minh họa chi tiết về mật mã học ứng dụng và an toàn thông tin mạng. Mọi đóng góp cải tiến đều được chào đón thông qua Pull Requests!
