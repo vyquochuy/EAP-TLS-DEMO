@@ -19,9 +19,7 @@ Giao thức **EAP-TLS** (được định nghĩa trong RFC 5216) là tiêu chu�
 
 ---
 
-## 📚 Tài Liệu Lý Thuyết & Kỹ Thuật Chuyên Sâu
-
-Để hiểu rõ hơn về kiến thức lý thuyết mạng, toán học mật mã và kỹ thuật lập trình OpenSSL thực tế của dự án, bạn có thể đọc chuỗi tài liệu phân tích chuyên sâu tại thư mục `docs/`:
+## Tài Liệu Lý Thuyết & Kỹ Thuật
 
 1. **[Phần 1: Tổng quan Kiến trúc Mạng 802.1X và Giao thức EAP-TLS](file:///d:/EAP-TLS-DEMO/docs/1_tong_quan_mang_8021x.md)**: Phân tích sâu về mô hình 3 thành phần 802.1X, cơ chế đóng gói gói tin EAPOL và tiến trình bắt tay EAP-TLS (RFC 5216).
 2. **[Phần 2: Mật mã học, Chứng chỉ số X.509 và các Thuật toán](file:///d:/EAP-TLS-DEMO/docs/2_mat_ma_va_chung_chi.md)**: Phân tích cơ sở toán học thuật toán RSA, định dạng chứng chỉ X.509, cơ chế đệm an toàn tối ưu **RSA-OAEP** chống tấn công Bleichenbacher (Chosen-Ciphertext Attack), và hàm băm SHA-256.
@@ -122,7 +120,6 @@ Dự án đã tích hợp sẵn file `.sln` và `.vcxproj` cho Visual Studio:
 3. Chọn cấu hình `Debug` hoặc `Release` (x64).
 4. Nhấn **F5** hoặc nhấp **Start** để biên dịch và chạy.
 
-
 ---
 
 ## Minh Họa Luồng Hoạt Động (Simulation Console Output)
@@ -193,8 +190,6 @@ Dự án đã tích hợp sẵn file `.sln` và `.vcxproj` cho Visual Studio:
     ==========================================
     ✓ EAP-TLS Authentication Process Completed
     ```
-
----
 
 ## Lưu Ý Bảo Mật & Học Thuật
 
