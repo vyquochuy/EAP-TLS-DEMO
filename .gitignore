@@ -1,0 +1,65 @@
+# ==========================================
+# C++ & Visual Studio / GCC Compiler Outputs
+# ==========================================
+
+# Object files & intermediate binaries
+*.o
+*.obj
+*.d
+*.o.d
+*.tlog
+*.lastbuildstate
+
+# Static and Dynamic Libraries
+*.lib
+*.a
+*.la
+*.lai
+*.lo
+*.slo
+*.so
+*.dylib
+*.dll
+
+# Executables & Debug Symbols
+*.exe
+*.out
+*.app
+*.pdb
+*.ilk
+*.idb
+*.exp
+
+# ==========================================
+# Visual Studio Build Folders & Cache
+# ==========================================
+.vs/
+x64/
+x86/
+ARM/
+ARM64/
+[Dd]ebug/
+[Rr]elease/
+EAP-TLS-DEMO/x64/
+EAP-TLS-DEMO/Debug/
+EAP-TLS-DEMO/Release/
+EAP-TLS-DEMO/ARM/
+EAP-TLS-DEMO/ARM64/
+
+# Visual Studio user-specific configurations
+*.user
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.vc.db
+*.vc.opendb
+*.sln.docstates
+
+# ==========================================
+# VS Code & GCC Runner Output Folders
+# ==========================================
+build/
+bin/
+out/
+.vscode

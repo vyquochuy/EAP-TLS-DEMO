@@ -130,6 +130,7 @@ int main() {
     // Cleanup OpenSSL
     EVP_cleanup();
     ERR_free_strings();
-
+    std::cout << "Press Enter to exit...";
+    std::cin.get();
     return 0;
 }
