@@ -19,14 +19,6 @@ Giao thức **EAP-TLS** (được định nghĩa trong RFC 5216) là tiêu chu�
 
 ---
 
-## Tài Liệu Lý Thuyết & Kỹ Thuật
-
-1. **[Phần 1: Tổng quan Kiến trúc Mạng 802.1X và Giao thức EAP-TLS](file:///d:/EAP-TLS-DEMO/docs/1_tong_quan_mang_8021x.md)**: Phân tích sâu về mô hình 3 thành phần 802.1X, cơ chế đóng gói gói tin EAPOL và tiến trình bắt tay EAP-TLS (RFC 5216).
-2. **[Phần 2: Mật mã học, Chứng chỉ số X.509 và các Thuật toán](file:///d:/EAP-TLS-DEMO/docs/2_mat_ma_va_chung_chi.md)**: Phân tích cơ sở toán học thuật toán RSA, định dạng chứng chỉ X.509, cơ chế đệm an toàn tối ưu **RSA-OAEP** chống tấn công Bleichenbacher (Chosen-Ciphertext Attack), và hàm băm SHA-256.
-3. **[Phần 3: Lập trình OpenSSL EVP API và Thiết kế Máy trạng thái C++](file:///d:/EAP-TLS-DEMO/docs/3_ky_thuat_va_lap_trinh_openssl.md)**: Hướng dẫn kỹ thuật sử dụng thư viện OpenSSL 3.x EVP API để sinh khóa, ký cert, mã hóa/giải mã OAEP, thiết kế máy trạng thái các thực thể C++ và quản lý bộ nhớ an toàn.
-
----
-
 ## Sơ Đồ Quy Trình Xác Thực (Mermaid Diagram)
 
 Quy trình trao đổi thông điệp EAP-TLS được mô phỏng chi tiết theo chuẩn 802.1X như sau:
